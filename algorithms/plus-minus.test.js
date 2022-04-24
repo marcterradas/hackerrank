@@ -1,4 +1,7 @@
-
+/*
+ * Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. (6 decimal)
+ *
+ */
 function plusMinus( array ){
     const numberElements = array.length;
 
