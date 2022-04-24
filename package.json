@@ -1,0 +1,25 @@
+{
+  "name": "hackerrank",
+  "version": "1.0.0",
+  "description": "My hackerrank solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcterradas/hackerrank.git"
+  },
+  "keywords": [
+    "hackerrank"
+  ],
+  "author": "Marc Terradas Zapata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcterradas/hackerrank/issues"
+  },
+  "homepage": "https://github.com/marcterradas/hackerrank#readme",
+  "devDependencies": {
+    "jest": "27.5.1"
+  }
+}
