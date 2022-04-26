@@ -1,24 +1,26 @@
-
 function staircase(stairCaseLength) {
+  let arrResult = [];
 
-    let arrResult = []
-    
-    for( let index = 1; index <= stairCaseLength; index++ ){
+  for (let index = 1; index <= stairCaseLength; index++) {
+    let newElement = "";
+    let numberOfSpaces = stairCaseLength - index;
 
-        let newElement = ''
-        let numberOfSpaces = stairCaseLength - index
+    newElement = newElement.padStart(numberOfSpaces, " ");
+    newElement = newElement.padEnd(stairCaseLength, "#");
 
-        newElement = newElement.padStart(numberOfSpaces,' ')
-        newElement = newElement.padEnd(stairCaseLength,'#')
+    arrResult[index - 1] = newElement;
+  }
 
-        arrResult[index - 1] = newElement
-
-    }
-
-    return arrResult
-
+  return arrResult;
 }
 
-test('staircase',function(){
-    expect(staircase(6)).toEqual([ '     #', '    ##', '   ###', '  ####', ' #####', '######' ])
-})
+test("staircase", function () {
+  expect(staircase(6)).toEqual([
+    "     #",
+    "    ##",
+    "   ###",
+    "  ####",
+    " #####",
+    "######",
+  ]);
+});
