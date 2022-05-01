@@ -3,7 +3,7 @@ function timeConversion(time) {
   time = time.substring(0, 8);
 
   const timeArr = time.split(":");
-  
+
   let hours = parseInt(timeArr[0]);
   let minutes = timeArr[1];
   let seconds = timeArr[2];
@@ -23,14 +23,14 @@ function timeConversion(time) {
   return result;
 }
 
-test("timeConversion1", function () {
+test("12:00:00AM", function () {
   expect(timeConversion("12:00:00AM")).toBe("00:00:00");
 });
 
-test("timeConversation2", function () {
+test("12:00:00PM", function () {
   expect(timeConversion("12:00:00PM")).toBe("12:00:00");
 });
 
-test("timeConversation2", function () {
+test("07:05:45PM", function () {
   expect(timeConversion("07:05:45PM")).toBe("19:05:45");
 });
